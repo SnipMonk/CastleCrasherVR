@@ -56,8 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Catapult\CoolLeverScript.cs" />
     <Compile Include="Assets\Scripts\Catapult\CatapultScript.cs" />
     <Compile Include="Assets\Scripts\Catapult\WeelHands.cs" />
+    <Compile Include="Assets\Scripts\Catapult\ReleasTrigger.cs" />
+    <Compile Include="Assets\Terrain\Water\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Terrain\Water\#NVJOB Water Shaders V2\Water Specular.shader" />
+    <None Include="Assets\Terrain\Trees\Shaders\StandardRP\BarkShaderAS.shader" />
+    <None Include="Assets\Terrain\Water\#NVJOB Water Shaders V2\Water Surface.shader" />
+    <None Include="Assets\Terrain\Trees\Shaders\StandardRP\TreeLeafSwitcherAS.shader" />
+    <None Include="Assets\Terrain\Water\#NVJOB Water Shaders V2\NvWaters.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -717,6 +727,9 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
@@ -729,8 +742,8 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
@@ -740,9 +753,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenVR.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
@@ -783,10 +793,6 @@
       <Project>{74E6CF33-731B-FFD6-8E54-90986754F145}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{9CD02128-1B67-087C-09F2-9DD40423D4A5}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
       <Project>{F35CF870-1EFB-EA5D-01D3-F770189A5D67}</Project>
       <Name>SteamVR</Name>
@@ -798,6 +804,10 @@
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{AFA03887-0CE5-4262-673F-39147D54641C}</Project>
       <Name>SteamVR_Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{9CD02128-1B67-087C-09F2-9DD40423D4A5}</Project>
+      <Name>SteamVR_Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

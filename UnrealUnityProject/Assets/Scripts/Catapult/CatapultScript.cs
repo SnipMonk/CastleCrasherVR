@@ -43,7 +43,7 @@ public class CatapultScript : MonoBehaviour
         {
             float angle = Mathf.Lerp(shootSpoonCurveMin.Evaluate(timer / shootTime), shootSpoonCurveMax.Evaluate(timer / shootTime), force);
             rot.x = Mathf.Lerp(lowRot, hihgRot, angle);
-            spoonTrans.rotation = Quaternion.Euler(rot);
+            spoonTrans.localRotation = Quaternion.Euler(rot);
 
             yield return null;
             timer += Time.deltaTime;
@@ -73,7 +73,7 @@ public class CatapultScript : MonoBehaviour
         {
             float angle = Mathf.Lerp(recoilCuveMin.Evaluate(timer / recoiTime), recoilCuveMax.Evaluate(timer / recoiTime), force);
             rot.x = Mathf.Lerp(lowRot, hihgRot, angle);
-            spoonTrans.rotation = Quaternion.Euler(rot);
+            spoonTrans.localRotation = Quaternion.Euler(rot);
 
             yield return null;
             timer += Time.deltaTime;
@@ -81,7 +81,7 @@ public class CatapultScript : MonoBehaviour
         print("Endedn");
         yield break;
     }
-    private void Shoot()
+    public void Shoot()
     {
         print("Shooted");
         isShooting = true;
@@ -91,7 +91,7 @@ public class CatapultScript : MonoBehaviour
     private void Start()
     {
         curProjectile = Instantiate(projectile, projectileHolder);
-        startRot = spoonTrans.rotation.eulerAngles;
+        startRot = spoonTrans.localRotation.eulerAngles;
     }
 
     private void Update()
@@ -106,11 +106,11 @@ public class CatapultScript : MonoBehaviour
         }
     }
 
-    private void Reload()
+    public void Reload()
     {
         Destroy(curProjectile);
         curProjectile = Instantiate(projectile, projectileHolder);
         isShooting = false;
-        spoonTrans.rotation = Quaternion.Euler(startRot);
+        spoonTrans.localRotation = Quaternion.Euler(startRot);
     }
 }

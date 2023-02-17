@@ -67,8 +67,8 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\FloppyHand.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_BooleanEvent.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Render.cs" />
-    <Compile Include="Assets\SteamVR\Input\SteamVR_Action.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs" />
+    <Compile Include="Assets\SteamVR\Input\SteamVR_Action.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Pose_TrackingChangedEvent.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Input_Source.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Balloon.cs" />
@@ -84,8 +84,8 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\UIElement.cs" />
-    <Compile Include="Assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\trackObj.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\LockToPoint.cs" />
+    <Compile Include="Assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\trackObj.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportMarkerBase.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HoverButton.cs" />
@@ -97,6 +97,7 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\TargetHitEffect.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_ActionDirections.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
+    <Compile Include="Assets\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRSimpleJSON.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnDetachedFromHand.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Skeleton_TrackingChangedEvent.cs" />
@@ -147,8 +148,8 @@
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\BodyCollider.cs" />
-    <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackingReferenceManager.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
+    <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackingReferenceManager.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_EnumEqualityComparer.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Pose_DeviceIndexChangedEvent.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HandCollider.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Input.cs" />
+    <Compile Include="Assets\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRPackageInstaller.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Vector2.cs" />
     <Compile Include="Assets\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Vector2Event.cs" />
     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonColliders.cs" />
@@ -236,8 +238,6 @@
     <Compile Include="Assets\SteamVR\Input\SteamVR_DefaultAction.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Ears.cs" />
     <Compile Include="Assets\SteamVR\Input\SteamVR_Behaviour_Single.cs" />
-    <Compile Include="Assets\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRPackageInstaller.cs" />
-    <Compile Include="Assets\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRSimpleJSON.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\Materials\LightCone.shader" />
