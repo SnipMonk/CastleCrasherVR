@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Catapult\LeverScript.cs" />
+    <Compile Include="Assets\Scripts\Catapult\WheelScript.cs" />
     <Compile Include="Assets\Terrain\Water\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
     <Compile Include="Assets\Scripts\Catapult\CatapultShooter.cs" />
     <Compile Include="Assets\Scripts\Catapult\WeelHands.cs" />

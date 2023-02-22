@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CatapultShooter : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class CatapultShooter : MonoBehaviour
     [SerializeField] AnimationCurve shootCurve;
     [SerializeField] float shootForce = 100;
 
+    [SerializeField] UnityEvent onShootEvent;
+
     private float upAngle;
     private float downAngle;
 
@@ -34,6 +37,11 @@ public class CatapultShooter : MonoBehaviour
         hingeJS = spoonHinge.spring;
         hingeJSSpring = hingeJS.spring;
         reloadProjectile();
+    }
+
+    public void GetProgress(float prog)
+    {
+        progress = prog;
     }
 
     [ContextMenu("Shoot")]
@@ -73,6 +81,7 @@ public class CatapultShooter : MonoBehaviour
             projRb.isKinematic = false;
             projRb.AddForce(projectileHolder.up* force, ForceMode.Impulse);
         }
+        onShootEvent.Invoke();
     }
 
     [ContextMenu("Reload")]

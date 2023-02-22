@@ -364,6 +364,7 @@
 "Assets/Scripts/Catapult/LeverMoveScript.cs"
 "Assets/Scripts/Catapult/LeverScript.cs"
 "Assets/Scripts/Catapult/WeelHands.cs"
+"Assets/Scripts/Catapult/WheelScript.cs"
 "Assets/Terrain/Water/#NVJOB Water Shaders V2/NVWaterShaders.cs"
 -langversion:9.0
 
